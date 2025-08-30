@@ -6,6 +6,8 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import internet from "./internet.png";
+
 
 import css from "./tech/css.png";
 import git from "./tech/git.png";
@@ -23,9 +25,9 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import nike from "./nike.png";
+import notesapp from "./NodeNote-App.png";
+import spotify from "./spotify-clone.png";
 
 export {
   logo,
@@ -36,6 +38,7 @@ export {
   github,
   menu,
   close,
+  internet,
   css,
   git,
   html,
@@ -50,7 +53,7 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  nike,
+  notesapp,
+  spotify
 };

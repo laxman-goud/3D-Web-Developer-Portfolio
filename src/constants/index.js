@@ -1,3 +1,4 @@
+import { li } from "framer-motion/client";
 import {
     mobile,
     backend,
@@ -17,9 +18,9 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
+    nike,
+    notesapp,
+    spotify,
     github
 } from "../assets";
 
@@ -188,12 +189,12 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Notes App",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "A full-stack Notes application developed using Node.js, Express, MongoDB, and EJS. It includes Google OAuth authentication, note creation and management, search, pagination, and session handling, offering users a secure, organized, and efficient experience for storing, accessing, and managing their notes online.",
         tags: [
             {
-                name: "react",
+                name: "expressjs",
                 color: "blue-text-gradient",
             },
             {
@@ -201,54 +202,57 @@ const projects = [
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "ejs",
                 color: "pink-text-gradient",
             },
+            {
+                name: "bootstrap",
+                color: "blue-text-gradient",
+            },
         ],
-        image: carrent,
-        source_code_link: "https://github.com/",
+        image: notesapp,
+        source_code_link: "https://github.com/laxman-goud/notes-app",
+        live_link: "https://nodenote.up.railway.app/",
     },
     {
-        name: "Job IT",
+        name: "Nike Landing Page",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "A modern and responsive Nike landing page built using React, Vite, and Tailwind CSS. It highlights dynamic layouts, clean UI components, and mobile-first responsiveness, delivering a sleek e-commerce showcase that reflects professional design practices and front-end development skills effectively.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "tailwindcss",
                 color: "green-text-gradient",
             },
-            {
-                name: "scss",
-                color: "pink-text-gradient",
-            },
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
+        image: nike,
+        source_code_link: "https://github.com/laxman-goud/nike_landing_page",
+        live_link: "https://nike-landing-page-tan-delta.vercel.app/",
     },
     {
-        name: "Trip Guide",
+        name: "Spotify Clone",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "A responsive Spotify-inspired music streaming web app built with HTML, CSS, and JavaScript. It replicates Spotify’s look and feel, letting users browse curated albums by mood, preview covers, and play tracks with a functional player for an engaging music experience.",
         tags: [
             {
-                name: "nextjs",
+                name: "html",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "css",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "javascript",
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
+        image: spotify,
+        source_code_link: "https://github.com/laxman-goud/Spotify-Clone",
+        live_link: "https://spotify-clone-pi-bay.vercel.app/",
     },
 ];
 
