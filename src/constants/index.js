@@ -212,7 +212,7 @@ const projects = [
         ],
         image: notesapp,
         source_code_link: "https://github.com/laxman-goud/notes-app",
-        live_link: "https://nodenote.up.railway.app/",
+        live_link: "https://notes-app-p8om.onrender.com/",
     },
     {
         name: "Nike Landing Page",
