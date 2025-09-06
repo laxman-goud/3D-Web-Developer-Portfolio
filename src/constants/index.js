@@ -1,4 +1,18 @@
-import { li } from "framer-motion/client";
+/**
+ * constants/index.js
+ * ---------------------------------------
+ * Centralized data for portfolio sections:
+ * - navLinks: Navigation menu items
+ * - services: Roles/services offered
+ * - technologies: Tech stack icons
+ * - experiences: Work experience timeline
+ * - testimonials: Client feedback
+ * - projects: Featured project showcase
+ *
+ * This file imports assets from /src/assets and
+ * provides structured arrays for rendering in the UI.
+ */
+
 import {
     mobile,
     backend,
@@ -21,90 +35,40 @@ import {
     nike,
     notesapp,
     spotify,
-    github
+    github,
 } from "../assets";
 
+/** Navigation links for the navbar */
 export const navLinks = [
-    {
-        id: "about",
-        title: "About",
-    },
-    {
-        id: "works",
-        title: "Works",
-    },
-    {
-        id: "contact",
-        title: "Contact",
-    },
+    { id: "about", title: "About" },
+    { id: "works", title: "Works" },
+    { id: "contact", title: "Contact" },
 ];
 
+/** Services / roles offered */
 const services = [
-    {
-        title: "Frontend Developer",
-        icon: web,
-    },
-    {
-        title: "Backend Developer",
-        icon: backend,
-    },
-    {
-        title: "MERN Stack Developer",
-        icon: mobile,
-    },
-    {
-        title: "Open Source Contributor",
-        icon: creator,
-    },
+    { title: "Frontend Developer", icon: web },
+    { title: "Backend Developer", icon: backend },
+    { title: "MERN Stack Developer", icon: mobile },
+    { title: "Open Source Contributor", icon: creator },
 ];
 
+/** Technologies used (stack logos) */
 const technologies = [
-    {
-        name: "HTML 5",
-        icon: html,
-    },
-    {
-        name: "CSS 3",
-        icon: css,
-    },
-    {
-        name: "JavaScript",
-        icon: javascript,
-    },
-    {
-        name: "React JS",
-        icon: reactjs,
-    },
-    {
-        name: "Tailwind CSS",
-        icon: tailwind,
-    },
-    {
-        name: "Node JS",
-        icon: nodejs,
-    },
-    {
-        name: "MongoDB",
-        icon: mongodb,
-    },
-    {
-        name: "Express JS",
-        icon: expressjs,
-    },
-    {
-        name: "Next JS",
-        icon: nextjs,
-    },
-    {
-        name: "git",
-        icon: git,
-    },
-    {
-        name: "github",
-        icon: github,
-    },
+    { name: "HTML 5", icon: html },
+    { name: "CSS 3", icon: css },
+    { name: "JavaScript", icon: javascript },
+    { name: "React JS", icon: reactjs },
+    { name: "Tailwind CSS", icon: tailwind },
+    { name: "Node JS", icon: nodejs },
+    { name: "MongoDB", icon: mongodb },
+    { name: "Express JS", icon: expressjs },
+    { name: "Next JS", icon: nextjs },
+    { name: "git", icon: git },
+    { name: "github", icon: github },
 ];
 
+/** Work experience timeline */
 const experiences = [
     {
         title: "React.js Developer",
@@ -113,10 +77,10 @@ const experiences = [
         iconBg: "#383E56",
         date: "March 2020 - April 2021",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Developing and maintaining web apps with React.js.",
+            "Collaborating with designers, PMs, and dev teams.",
+            "Ensuring responsive design and cross-browser compatibility.",
+            "Code reviews and providing feedback.",
         ],
     },
     {
@@ -126,10 +90,10 @@ const experiences = [
         iconBg: "#E6DEDD",
         date: "Jan 2021 - Feb 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Built and maintained apps with React.js & React Native.",
+            "Worked with cross-functional teams on quality products.",
+            "Responsive design and browser/device compatibility.",
+            "Participated in code reviews and collaboration.",
         ],
     },
     {
@@ -139,10 +103,10 @@ const experiences = [
         iconBg: "#383E56",
         date: "Jan 2022 - Jan 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Developed Shopify-based web apps with React.js.",
+            "Collaborated with designers and backend engineers.",
+            "Implemented mobile-first responsive layouts.",
+            "Provided constructive feedback during reviews.",
         ],
     },
     {
@@ -152,14 +116,15 @@ const experiences = [
         iconBg: "#E6DEDD",
         date: "Jan 2023 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Full-stack web app development with MERN stack.",
+            "Collaboration with design & product teams.",
+            "Optimized apps for responsiveness and performance.",
+            "Active participation in code reviews.",
         ],
     },
 ];
 
+/** Client testimonials */
 const testimonials = [
     {
         testimonial:
@@ -187,28 +152,17 @@ const testimonials = [
     },
 ];
 
+/** Featured portfolio projects */
 const projects = [
     {
         name: "Notes App",
         description:
-            "A full-stack Notes application developed using Node.js, Express, MongoDB, and EJS. It includes Google OAuth authentication, note creation and management, search, pagination, and session handling, offering users a secure, organized, and efficient experience for storing, accessing, and managing their notes online.",
+            "Full-stack notes app with Node.js, Express, MongoDB & EJS. Supports Google OAuth, CRUD, search, pagination, and secure session handling.",
         tags: [
-            {
-                name: "expressjs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "mongodb",
-                color: "green-text-gradient",
-            },
-            {
-                name: "ejs",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "bootstrap",
-                color: "blue-text-gradient",
-            },
+            { name: "expressjs", color: "blue-text-gradient" },
+            { name: "mongodb", color: "green-text-gradient" },
+            { name: "ejs", color: "pink-text-gradient" },
+            { name: "bootstrap", color: "blue-text-gradient" },
         ],
         image: notesapp,
         source_code_link: "https://github.com/laxman-goud/notes-app",
@@ -217,16 +171,10 @@ const projects = [
     {
         name: "Nike Landing Page",
         description:
-            "A modern and responsive Nike landing page built using React, Vite, and Tailwind CSS. It highlights dynamic layouts, clean UI components, and mobile-first responsiveness, delivering a sleek e-commerce showcase that reflects professional design practices and front-end development skills effectively.",
+            "Responsive Nike landing page with React, Vite, and Tailwind CSS. Features dynamic layouts, clean UI, and mobile-first responsiveness.",
         tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "tailwindcss",
-                color: "green-text-gradient",
-            },
+            { name: "react", color: "blue-text-gradient" },
+            { name: "tailwindcss", color: "green-text-gradient" },
         ],
         image: nike,
         source_code_link: "https://github.com/laxman-goud/nike_landing_page",
@@ -235,20 +183,11 @@ const projects = [
     {
         name: "Spotify Clone",
         description:
-            "A responsive Spotify-inspired music streaming web app built with HTML, CSS, and JavaScript. It replicates Spotify’s look and feel, letting users browse curated albums by mood, preview covers, and play tracks with a functional player for an engaging music experience.",
+            "Spotify-inspired music web app using HTML, CSS, and JS. Browse curated albums, preview covers, and play tracks with a functional player.",
         tags: [
-            {
-                name: "html",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "css",
-                color: "green-text-gradient",
-            },
-            {
-                name: "javascript",
-                color: "pink-text-gradient",
-            },
+            { name: "html", color: "blue-text-gradient" },
+            { name: "css", color: "green-text-gradient" },
+            { name: "javascript", color: "pink-text-gradient" },
         ],
         image: spotify,
         source_code_link: "https://github.com/laxman-goud/Spotify-Clone",
